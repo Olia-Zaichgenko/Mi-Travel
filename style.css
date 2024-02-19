@@ -1,0 +1,115 @@
+/* настройки для всех элеменетов */
+*{
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* коробка со всеми заданиями */
+.big-box{
+    /* ширина флекс-бокса */
+    width: 1000px;
+    /* высота флекс-бокса */
+    height: 1200px;
+    /* фоновый цвет */
+    background-color: #dadada;
+    /* подключаем флекс-бокс настройки */
+    display: flex;
+    /* перенос по строкам - вкл */
+    flex-wrap: wrap;
+    /* отступ между блоками - пространство вокруг */
+    justify-content: space-between;
+    /* отступ между строками - пространство вокруг */
+    align-content: space-between;
+}
+
+/* коробка для одного задания */
+.midi-box{
+    width: 30%;
+    height: 24%;
+    background: #f36767;
+    border: 2px solid black;
+    display: flex;
+}
+
+/* настройки точки задания */
+.dot{
+    background-color: rgb(145, 7, 7);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.var{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+/* обращение к коробке с первым заданием */
+.big-box .midi-box:nth-child(1){
+    justify-content: space-between;
+
+}
+/* обращение к коробке с первым заданием */
+.big-box .midi-box:nth-child(1) .dot:nth-child(1){
+    justify-content: end;
+}
+
+/* обращение к коробке со вторым заданием */
+.big-box .midi-box:nth-child(2){
+    justify-content: end;
+}
+.big-box .midi-box:nth-child(3){
+    justify-content: center;
+}
+.big-box .midi-box:nth-child(4){
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+.big-box .midi-box:nth-child(5){
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.big-box .midi-box:nth-child(6){
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.big-box .midi-box:nth-child(7){
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+.big-box .midi-box:nth-child(8){
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+.big-box .midi-box:nth-child(9){
+    justify-content: space-between;}
+.big-box .midi-box:nth-child(9) .dot:nth-child(2){
+        align-self: self-end;
+}
+.big-box .midi-box:nth-child(10){
+    justify-content: space-between;}
+    .big-box .midi-box:nth-child(10) .dot:nth-child(2){
+        align-self: center;}
+    .big-box .midi-box:nth-child(10) .dot:nth-child(3){
+        align-self: self-end;
+     }
+ .big-box .midi-box:nth-child(11){
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+.big-box .midi-box:nth-child(12){
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
